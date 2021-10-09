@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">IJapp</string>
-    <string name="button_start">Start</string>
+    <string name="menu_hi_text">Hej!</string>
+    <string name="menu_start_text">Do nauki!</string>
+    <string name="menu_challenge_text">Wyzwanie</string>
+    <string name="menu_achievements_text">Moje osiągnięcia</string>
+    <string name="menu_settings_text">Ustawienia</string>
+    <string name="menu_rank_text">Ranking</string>
 </resources>
