@@ -4,22 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#987C7C"
+
+    android:background="@drawable/gradient_background"
+
     tools:context=".Settings">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="414dp"
+        android:layout_height="631dp"
 
 
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="-2dp"
+
+        android:layout_marginBottom="-5dp"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:showDividers="middle"
+            android:divider="@drawable/button_margins"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="edytuj Profil"
+                app:backgroundTint="none"/>
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="wygląd"
+
+                app:backgroundTint="none" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="Powiadomienia"
+                app:backgroundTint="none" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="Słownictwo"
+                app:backgroundTint="none" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="Kontkat"
+                app:backgroundTint="none" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setings_button"
+                android:text="wyloguj"
+
+                app:backgroundTint="none" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <Switch
@@ -51,18 +119,18 @@
     <ImageButton
 
         android:id="@+id/imageButton"
-        android:layout_width="125dp"
-        android:layout_height="60dp"
+        android:layout_width="135dp"
+        android:layout_height="59dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="0dp"
-        android:background="#987C7C"
-        android:backgroundTint="#987C7C"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="1dp"
+        android:background="none
+"
         android:scaleType="center"
-        android:tint="#F6F3F3"
+
         android:translationY="-5"
         app:srcCompat="?attr/homeAsUpIndicator" />
-
 
 
 </RelativeLayout>
