@@ -44,7 +44,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="edytuj Profil"
-                app:backgroundTint="none"/>
+                app:backgroundTint="@null"/>
 
 
             <Button
@@ -54,14 +54,14 @@
                 android:background="@drawable/setings_button"
                 android:text="wygląd"
 
-                app:backgroundTint="none" />
+                app:backgroundTint="@null" />
             <Button
                 android:id="@+id/button2"
                 android:layout_width="280dp"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Powiadomienia"
-                app:backgroundTint="none" />
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/button3"
@@ -69,7 +69,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Słownictwo"
-                app:backgroundTint="none" />
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/button4"
@@ -77,7 +77,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Kontkat"
-                app:backgroundTint="none" />
+                app:backgroundTint="@null" />
             <Button
                 android:id="@+id/button5"
                 android:layout_width="280dp"
@@ -85,7 +85,7 @@
                 android:background="@drawable/setings_button"
                 android:text="wyloguj"
 
-                app:backgroundTint="none" />
+                app:backgroundTint="@null" />
 
         </LinearLayout>
     </LinearLayout>
@@ -97,7 +97,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="28dp" />
+        android:layout_marginEnd="28dp"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -111,9 +112,8 @@
 
         android:fontFamily="sans-serif-smallcaps"
         android:text="ustawienia"
-        android:textColor="#FFFF
-"
-        android:textSize="25" />
+        android:textColor="#FFFF"
+        android:textSize="25sp" />
 
 
     <ImageButton
@@ -125,12 +125,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="-2dp"
         android:layout_marginTop="1dp"
-        android:background="none
-"
+        android:background="@null"
         android:scaleType="center"
-
-        android:translationY="-5"
+        android:translationY="-5dp"
         app:srcCompat="?attr/homeAsUpIndicator" />
+
 
 
 </RelativeLayout>
