@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginVertical="205dp"
-        android:translationY="-30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="230dp"
+
         android:orientation="vertical">
 
         <Button
@@ -21,7 +21,12 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/red"
             android:text="@string/menu_start_text"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:shadowRadius="5"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="@color/brown"
+            />
 
         <Button
             android:id="@+id/challenge"
@@ -30,6 +35,10 @@
             android:backgroundTint="@color/skin"
             android:text="@string/menu_challenge_text"
             android:textSize="28sp"
+            android:shadowRadius="5"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="@color/brown"
 
             />
 
@@ -47,7 +56,11 @@
                 android:text="@string/menu_achievements_text"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:translationY="-10.5dp" />
+                android:translationY="-10.5dp"
+                android:shadowRadius="5"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowColor="@color/brown"/>
 
             <Button
                 android:id="@+id/settings"
@@ -59,7 +72,11 @@
                 android:backgroundTint="@color/grey"
                 android:text="@string/menu_settings_text"
                 android:textAlignment="gravity"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:shadowRadius="5"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowColor="@color/brown"/>
 
         </TableRow>
 
@@ -70,6 +87,10 @@
             android:backgroundTint="@color/purple"
             android:text="@string/menu_rank_text"
             android:textSize="28sp"
+            android:shadowRadius="5"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="@color/brown"
              />
 
 
