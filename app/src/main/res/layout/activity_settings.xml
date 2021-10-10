@@ -30,8 +30,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
 
             android:showDividers="middle"
@@ -41,7 +41,7 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="edytuj Profil"
                 app:backgroundTint="none"/>
@@ -50,7 +50,7 @@
             <Button
                 android:id="@+id/button1"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="wygląd"
 
@@ -58,7 +58,7 @@
             <Button
                 android:id="@+id/button2"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Powiadomienia"
                 app:backgroundTint="none" />
@@ -66,7 +66,7 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Słownictwo"
                 app:backgroundTint="none" />
@@ -74,14 +74,14 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Kontkat"
                 app:backgroundTint="none" />
             <Button
                 android:id="@+id/button5"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="wyloguj"
 
