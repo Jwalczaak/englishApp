@@ -13,15 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
-        <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
-            <item name="cornerFamily">rounded</item>
-            <item name="cornerSize">16dp</item>
-        </style>
 
-
-        <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
-            <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
-        </style>
 
 
     </style>
