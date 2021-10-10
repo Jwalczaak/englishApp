@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/greenyellow"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:id="@+id/start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/red"
+            android:background="@drawable/rounded_corner_button"
             android:text="@string/menu_start_text"
             android:textSize="28dp" />
 
@@ -33,17 +33,14 @@
 
             />
 
-        <LinearLayout
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="71dp"
-            android:layout_marginBottom="280dp"
-
-            android:orientation="horizontal">
+            android:layout_height="match_parent" >
 
             <Button
                 android:id="@+id/achievements"
-                android:layout_width="188dp"
-                android:layout_height="65dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/greyyellow"
@@ -53,15 +50,15 @@
 
             <Button
                 android:id="@+id/settings"
-                android:layout_width="166dp"
-                android:layout_height="66dp"
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
                 android:layout_marginLeft="5dp"
-                android:layout_weight="0.2"
+                android:layout_weight="0"
                 android:backgroundTint="@color/grey"
                 android:text="@string/menu_settings_text"
-                android:textSize="19dp" />
-
-        </LinearLayout>
+                android:textAlignment="gravity"
+                android:textSize="17dp" />
+        </TableRow>
 
         <Button
             android:id="@+id/button7"
@@ -70,7 +67,7 @@
             android:backgroundTint="@color/purple"
             android:text="@string/menu_rank_text"
             android:textSize="28dp"
-            android:translationY="-285dp" />
+            android:translationY="-70dp" />
 
 
     </LinearLayout>

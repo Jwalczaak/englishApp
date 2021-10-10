@@ -45,7 +45,7 @@
         android:text="ustawienia"
         android:textColor="#FFFF
 "
-        android:textSize="25" />
+        android:textSize="25dp" />
 
 
     <ImageButton
@@ -59,8 +59,8 @@
         android:background="#987C7C"
         android:backgroundTint="#987C7C"
         android:scaleType="center"
-        android:tint="#F6F3F3"
-        android:translationY="-5"
+        app:tint="#FFF6F3F3"
+        android:translationY="-5dp"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
 
