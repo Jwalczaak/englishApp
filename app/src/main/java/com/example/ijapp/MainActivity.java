@@ -40,12 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case "achievements":
-
+                startActivity(new Intent (this, Achievements.class));
                 break;
 
             case "settings":
-                Intent intent = new Intent (this, Settings.class);
-                startActivity(intent);
+                startActivity(new Intent (this, Settings.class));
                 break;
 
             case "rank":
