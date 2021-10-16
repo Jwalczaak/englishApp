@@ -9,6 +9,104 @@
 
     tools:context=".Settings">
 
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="match_parent"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="-2dp"
+
+        android:layout_marginBottom="-5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+
+            android:showDividers="middle"
+            android:divider="@drawable/button_margins"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="edytuj Profil"
+                app:backgroundTint="@null"/>
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="wygląd"
+
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="Powiadomienia"
+                android:layout_weight="1"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="Słownictwo"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="Kontkat"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:background="@drawable/setings_button"
+                android:text="wyloguj"
+
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="28dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="145dp"
@@ -24,6 +122,7 @@
         android:textColor="#FFFF"
         android:textSize="25sp" />
 
+
     <ImageButton
 
         android:id="@+id/imageButton"
@@ -38,96 +137,6 @@
         android:translationY="-5dp"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
-    <Switch
-        android:id="@+id/switch8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="28dp"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="-5dp"
-        android:background="#FFFFFF"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="edytuj Profil"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="wygląd"
-
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="Powiadomienia"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="Kontkat"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="Słownictwo"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setings_button"
-            android:text="wyloguj"
-
-            app:backgroundTint="@null" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-
-            android:divider="@drawable/button_margins"
-            android:orientation="vertical"
-            android:showDividers="middle">
-
-
-        </LinearLayout>
-    </LinearLayout>
 
 
 </RelativeLayout>
