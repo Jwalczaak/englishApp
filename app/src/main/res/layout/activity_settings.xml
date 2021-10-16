@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="414dp"
-        android:layout_height="631dp"
+        android:layout_height="match_parent"
 
 
         android:layout_alignParentStart="true"
@@ -30,9 +30,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="50dp"
+            android:layout_marginHorizontal="100dp"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
+            android:layout_weight="1"
 
             android:showDividers="middle"
             android:divider="@drawable/button_margins"
@@ -40,7 +41,8 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="edytuj Profil"
@@ -49,7 +51,8 @@
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="wygląd"
@@ -57,15 +60,17 @@
                 app:backgroundTint="@null" />
             <Button
                 android:id="@+id/button2"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Powiadomienia"
+                android:layout_weight="1"
                 app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Słownictwo"
@@ -73,14 +78,16 @@
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="Kontkat"
                 app:backgroundTint="@null" />
             <Button
                 android:id="@+id/button5"
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="60dp"
                 android:background="@drawable/setings_button"
                 android:text="wyloguj"
