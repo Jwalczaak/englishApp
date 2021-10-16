@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IJapp">
         <activity
+            android:name=".Lern"
+            android:exported="true" />
+        <activity
+            android:name=".Rank"
+            android:exported="true" />
+        <activity
+            android:name=".Achievements"
+            android:exported="true" />
+        <activity
+            android:name=".Challenge"
+            android:exported="true" />
+        <activity
             android:name=".Settings"
             android:exported="true" />
         <activity
