@@ -16,4 +16,6 @@
     <color name="grey">#FFa3a3a3</color>
     <color name="greyyellow">#FFedcb66</color>
     <color name="purple">#FF864bcc</color>
+    <color name="litegray">#FF333333</color>
+    <color name="cyan">#FF54f0e5</color>
 </resources>

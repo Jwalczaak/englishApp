@@ -10,44 +10,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
         android:layout_centerVertical="true"
-        android:orientation="vertical"
-        android:showDividers="middle"
+        android:layout_marginHorizontal="16dp"
         android:divider="@drawable/spacer_menu"
-        >
+        android:orientation="vertical"
+        android:showDividers="middle">
 
         <Button
-            android:onClick="switchActivity"
             android:id="@+id/start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_button_menu"
-            app:backgroundTint="@color/red"
-            android:text="@string/menu_start_text"
-            android:textSize="28sp"
-            android:shadowRadius="5"
+            android:onClick="switchActivity"
+            android:shadowColor="@color/brown"
             android:shadowDx="10"
             android:shadowDy="10"
-            android:shadowColor="@color/brown"
+            android:shadowRadius="5"
+            android:text="@string/menu_start_text"
+            android:textSize="28sp"
+            app:backgroundTint="@color/red"
 
             />
 
         <Button
-            android:onClick="switchActivity"
             android:id="@+id/challenge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button_menu"
-            app:backgroundTint="@color/skin"
             android:layout_marginBottom="5dp"
-            android:text="@string/menu_challenge_text"
-            android:textSize="28sp"
-            android:shadowRadius="5"
+            android:background="@drawable/rounded_button_menu"
+            android:onClick="switchActivity"
+            android:shadowColor="@color/brown"
             android:shadowDx="10"
             android:shadowDy="10"
-            android:shadowColor="@color/brown"
+            android:shadowRadius="5"
+            android:text="@string/menu_challenge_text"
+            android:textSize="28sp"
+            app:backgroundTint="@color/skin"
 
             />
 
@@ -58,57 +57,56 @@
             >
 
             <Button
-                android:onClick="switchActivity"
                 android:id="@+id/achievements"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="65dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button_menu"
-                app:backgroundTint="@color/greyyellow"
-                android:text="@string/menu_achievements_text"
-                android:textSize="18sp"
-                android:textAlignment="center"
-                android:translationY="-10.5dp"
-                android:shadowRadius="5"
+                android:onClick="switchActivity"
+                android:shadowColor="@color/brown"
                 android:shadowDx="10"
                 android:shadowDy="10"
-                android:shadowColor="@color/brown" />
+                android:shadowRadius="5"
+                android:text="@string/menu_achievements_text"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="-10.5dp"
+                app:backgroundTint="@color/greyyellow" />
 
             <Button
-                android:onClick="switchActivity"
                 android:id="@+id/settings"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_marginStart="5dp"
                 android:layout_weight="0"
                 android:background="@drawable/rounded_button_menu"
-                app:backgroundTint="@color/grey"
+                android:onClick="switchActivity"
                 android:shadowColor="@color/brown"
                 android:shadowDx="10"
                 android:shadowDy="10"
                 android:shadowRadius="5"
                 android:text="@string/menu_settings_text"
                 android:textAlignment="gravity"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                app:backgroundTint="@color/grey" />
 
         </TableRow>
 
         <Button
-            android:onClick="switchActivity"
             android:id="@+id/rank"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:background="@drawable/rounded_button_menu"
-            app:backgroundTint="@color/purple"
-            android:text="@string/menu_rank_text"
-            android:textSize="28sp"
-            android:shadowRadius="5"
+            android:onClick="switchActivity"
+            android:shadowColor="@color/brown"
             android:shadowDx="10"
             android:shadowDy="10"
-            android:shadowColor="@color/brown"
-            android:layout_marginTop="4dp"
-             />
+            android:shadowRadius="5"
+            android:text="@string/menu_rank_text"
+            android:textSize="28sp"
+            app:backgroundTint="@color/purple" />
 
 
     </LinearLayout>
