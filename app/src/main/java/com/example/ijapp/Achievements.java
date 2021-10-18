@@ -13,10 +13,11 @@ import android.widget.TextView;
 import android.view.View;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Achievements extends AppCompatActivity {
 
-    ArrayList<ProgressBar> progressBars;
+    ArrayList<ProgressBar> progressBars = new ArrayList();
     int achivAll = 12;
     int achivDone = 0;
 
@@ -24,7 +25,8 @@ public class Achievements extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievements);
-        getProgressBars();
+        getProgressBars(getWindow().getDecorView());
+        setRandomProgress(progressBars);
         setAchivText();
 
     }
@@ -36,29 +38,23 @@ public class Achievements extends AppCompatActivity {
         achivCount.setText(achivCountText);
     }
 
-    void getProgressBars()
+    private void setRandomProgress(ArrayList<ProgressBar> pbs)
     {
-        TableLayout viewGroup = findViewById(R.id.achievTable);
-        for(int index = 0; index < ((ViewGroup) viewGroup).getChildCount(); index++) {
-            View nextChild = ((ViewGroup) viewGroup).getChildAt(index);
-            if(nextChild instanceof TableRow)
-            {
-                TableRow tableRow = (TableRow) nextChild;
-                for(int i = 0; i < ((ViewGroup) tableRow).getChildCount(); i++)
-                {
-                    View rl = ((ViewGroup) tableRow).getChildAt(i);
-                    for(int j = 0; j < ((ViewGroup) rl).getChildCount(); j++)
-                    {
-                        View pb =  ((ViewGroup) rl).getChildAt(index);
-                        if(pb instanceof  ProgressBar)
-                        {
-                            Log.w("Got ", "______________________________________________________________________Progress");
-                        }
-                    }
-                }
-            }
-            else break;
-
+        if(pbs.isEmpty()) return;
+        for(int i = 0; i < pbs.size(); i++)
+        {
+            pbs.get(i).setProgress(new Random().nextInt(100));
         }
     }
+
+    private void getProgressBars(View v) {
+        ViewGroup viewgroup=(ViewGroup)v;
+        for (int i = 0; i < viewgroup.getChildCount(); i++) {
+            View v1 = viewgroup.getChildAt(i);
+            if (v1 instanceof ViewGroup) getProgressBars(v1);
+            if (v1 instanceof  ProgressBar) progressBars.add( (ProgressBar) v1);
+        }
+    }
+
+
 }
