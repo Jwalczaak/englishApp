@@ -27,7 +27,7 @@
                 android:id="@+id/achievementsCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:tag="achievs_text_up"
                 android:layout_marginTop="60dp"
                 android:shadowColor="@color/brown"
                 android:shadowDx="10"
@@ -84,6 +84,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
+                            android:id="@+id/achiev1_name"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev1_progress"
                             android:shadowColor="@color/brown"
@@ -94,6 +95,8 @@
                             android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+
+
 
 
                     </RelativeLayout>

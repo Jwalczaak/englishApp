@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     public void switchActivity(View view){
         String sID;
 
-        if (view.getId() == View.NO_ID){sID = null; return;}
-        else                            sID = view.getResources().getResourceName(view.getId());
+        if (view.getId() == View.NO_ID) return;
+        else sID = view.getResources().getResourceName(view.getId());
 
         int lastSlash = sID.lastIndexOf('/');
         sID = sID.substring(lastSlash+1, sID.length());
