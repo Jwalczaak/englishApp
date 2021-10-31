@@ -61,9 +61,9 @@ public class Achievements extends AppCompatActivity {
         for (int i = 0; i < viewgroup.getChildCount(); i++)
         {
             View v1 = viewgroup.getChildAt(i);
-            if (v1 instanceof  ViewGroup)   getProgressBars(v1);
-            if (v1 instanceof  TextView && v1.getTag() == null)    achievNames.add( (TextView) v1);
-            if (v1 instanceof  ProgressBar) progressBars.add( (ProgressBar) v1);
+            if (v1 instanceof  ViewGroup)                        getProgressBars(v1);
+            if (v1 instanceof  TextView && v1.getTag() == null)  achievNames.add( (TextView) v1);
+            if (v1 instanceof  ProgressBar)                      progressBars.add( (ProgressBar) v1);
         }
 
     }
@@ -79,17 +79,20 @@ public class Achievements extends AppCompatActivity {
             else return;
 
             TextView tv = new TextView(this);
-            String txt = "Achiev" + (i+1) + " description text";
+            String txt = "Achiev" + (i+1) + " description";
 
             tv.setText(txt);
             tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             tv.setTextColor(Color.WHITE);
+            tv.setTextSize(10);
             //tv.setVisibility(View.GONE);
 
 
             LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+            Log.d("ACHIEV NAME ID:", "ID = " + i + achievNames.get(i).getId());
             layoutParams.addRule(RelativeLayout.BELOW, achievNames.get(i).getId());
             //layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+            tv.setLayoutParams(layoutParams);
 
             descriptionIDs.add(tv.getId());
 

@@ -83,8 +83,8 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_width="match_parent"
                             android:id="@+id/achiev1_name"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev1_progress"
                             android:shadowColor="@color/brown"
@@ -133,6 +133,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev2_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev2_progress"
@@ -180,6 +181,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev3_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev3_progress"
@@ -234,6 +236,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev4_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev4_progress"
@@ -281,6 +284,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev5_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev5_progress"
@@ -328,6 +332,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev6_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev6_progress"
@@ -382,6 +387,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev7_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev7_progress"
@@ -429,6 +435,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev8_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev8_progress"
@@ -476,6 +483,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev9_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev9_progress"
@@ -530,6 +538,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev10_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev10_progress"
@@ -577,6 +586,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev11_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev11_progress"
@@ -624,6 +634,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:id="@+id/achiev12_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/achiev12_progress"
